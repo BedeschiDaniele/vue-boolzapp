@@ -12,6 +12,9 @@ body {
   height: 100vh;
   background: linear-gradient(#009688 20%, #D8DBD6 20%);
 }
+ul {
+  list-style: none;
+}
 .container {
   display: flex;
   width: 93%;
@@ -22,7 +25,7 @@ body {
 .panel-left {
   width: 35%;
   height: 100%;
-  border-right: 1px solid grey;
+  border-right: 1px solid #D7D7D7;
 }
 .profile {
   display: flex;
@@ -73,6 +76,7 @@ body {
   margin-left: 10px;
   font-size: 17px;
 }
+/* Panel search */
 .search {
   display: flex;
   align-items: center;
@@ -98,6 +102,14 @@ body {
   width: 100%;
   font-size: 15px;
   border: none
+}
+/* Panel friend */
+
+.friend ul img {
+  width: 50px;
+  margin-top: 20px;
+  margin-left: 15px;
+  border-radius: 50px;
 }
 /* /Pannello di sinistra */
 /* Pannello di destra */
