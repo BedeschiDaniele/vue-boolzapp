@@ -153,6 +153,32 @@ ul {
 .user-chat > span {
   margin-left: 15px;
 }
+/* Chat send and received */
+.container-message {
+  display: flex;
+}
+.message-received {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  margin-top: 100px;
+  border-radius: 15px;
+  margin-left: 70px;
+  background-color: white;
+}
+.message-send {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  margin-top: 50px;
+  border-radius: 15px;
+  margin-left: 70px;
+  background-color: #D5F9BA;
+}
+.message-send span {
+  margin-left: 20px;
+}
+
 /* Input text */
 .input-text {
   height: 94%;

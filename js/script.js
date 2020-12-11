@@ -49,7 +49,7 @@ var app = new Vue(
     		],
     	},
     	{
-    		name: 'Re',
+    		name: 'Re Artù',
     		avatar: 'img/re.png',
     		visible: true,
     		messages: [

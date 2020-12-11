@@ -46,7 +46,7 @@
         <div class="friend">
           <ul>
             <li v-for="(item,index) in contacts">
-              <img :src="item.avatar" alt="avatar">
+              <img :src="item.avatar" :alt="item.name">
               <span>{{item.name}}</span>
             </li>
           </ul>
@@ -69,6 +69,15 @@
             </div>
         </div>
         <!-- Chat send and received -->
+        <div class="container-message">
+          <div class="message-received">
+            <span>Tutto fatto!</span>
+          </div>
+          <div class="message-send">
+            <span>Hai portato a spasso il cane?</span>
+          </div>
+        </div>
+
       <!-- Write message -->
         <div class="input-text">
           <div class="bar">
