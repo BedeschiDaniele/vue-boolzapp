@@ -33,7 +33,12 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
-  background-color: green;
+  background-color: #EAEAEA;
+}
+.user {
+  width: 60%;
+  display: flex;
+  align-items: center;
 }
 #profile-avatar {
   width: 50px;
@@ -42,4 +47,14 @@ body {
 }
 .profile > span {
   margin-left: 5px;
+}
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+}
+.icons > i {
+  font-size: 20px;
+  margin-right: 25px;
+  color: #B1B1B1;
 }
