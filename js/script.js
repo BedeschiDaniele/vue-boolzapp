@@ -5,8 +5,8 @@ var app = new Vue(
    data: {
        contacts: [
     	{
-    		name: 'Babbo',
-    		avatar: 'js/img/babbo.png',
+    		name: 'Michele',
+    		avatar: 'https://cdn5.vectorstock.com/i/1000x1000/17/14/male-hacker-avatar-icon-image-vector-17311714.jpg',
     		visible: true,
     		messages: [
     			{
@@ -27,8 +27,8 @@ var app = new Vue(
     		],
     	},
     	{
-    		name: 'Re',
-    		avatar: 'js/img/re.png',
+    		name: 'Babbo Natale',
+    		avatar: 'img/babbo.png',
     		visible: true,
     		messages: [
     			{
@@ -49,8 +49,8 @@ var app = new Vue(
     		],
     	},
     	{
-    		name: 'Samuele',
-    		avatar: 'js/img/nerd.png',
+    		name: 'Re',
+    		avatar: 'img/re.png',
     		visible: true,
     		messages: [
     			{
@@ -71,8 +71,8 @@ var app = new Vue(
     		],
     	},
     	{
-    		name: 'Luisa',
-    		avatar: '_4',
+    		name: 'Samuele',
+    		avatar: 'img/nerd.png',
     		visible: true,
     		messages: [
     			{

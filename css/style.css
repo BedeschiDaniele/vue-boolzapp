@@ -111,6 +111,13 @@ ul {
   margin-left: 15px;
   border-radius: 50px;
 }
+.friend ul li {
+  display: flex;
+  align-items: center;
+}
+.friend span {
+  margin-left: 15px;
+}
 /* /Pannello di sinistra */
 /* Pannello di destra */
 .panel-right {
