@@ -70,11 +70,19 @@
         </div>
         <!-- Chat send and received -->
         <div class="container-message">
-          <div class="message-received clearfix">
-            <span>Tutto fatto!</span>
+          <div :class=""class="message-send clerfix active">
+            <ul>
+              <li v-for="item in contacts[1].messages" v-if="item.status=='sent'">
+                {{item}}
+              </li>
+            </ul>
           </div>
-          <div class="message-send clerfix">
-            <span>Hai portato a spasso il cane?</span>
+          <div class="message-received clearfix">
+            <ul>
+              <li v-for="item in contacts[1].messages" v-if="item.status=='received'">
+                {{item}}
+              </li>
+            </ul>
           </div>
         </div>
 

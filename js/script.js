@@ -88,6 +88,14 @@ var app = new Vue(
     		],
     	},
     ]
+  },
+  methods: {
+    // filterMessage: function () {
+    //     const filteredArray = contacts[0].messages.map((element, index) => {
+    //
+    //     return element.text;
+    //   });
+    // }
   }
  }
 );
