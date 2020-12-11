@@ -54,6 +54,52 @@ body {
   margin-right: 25px;
   color: #B1B1B1;
 }
+.notifications {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  background-color: #8EDAFC;
+}
+#bell {
+  padding: 12px;
+  margin-left: 15px;
+  background-color: white;
+  border-radius: 50px;
+  color: #8EDAFC;
+  font-size: 22px;
+}
+.notifications > p {
+  margin-left: 10px;
+  font-size: 17px;
+}
+.search {
+  display: flex;
+  align-items: center;
+  height: 8%;
+  background-color: #FAFAFA;
+  color: #C1C5C7;
+}
+.icon-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 11%;
+  height: 40px;
+  margin-left: 15px;
+  background-color: white;
+}
+.input-search {
+  display: flex;
+  height: 40px;
+  width: 83%;
+}
+.input-search > input {
+  width: 100%;
+  font-size: 15px;
+  border: none
+}
+/* /Pannello di sinistra */
 /* Pannello di destra */
 .panel-right {
   width: 65%;
@@ -80,3 +126,4 @@ body {
 .user-chat > span {
   margin-left: 15px;
 }
+/* /Pannello di destra */
