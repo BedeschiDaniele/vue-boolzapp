@@ -76,6 +76,14 @@ ul {
   margin-left: 10px;
   font-size: 17px;
 }
+#text-notifications {
+  margin-left: 10px;
+  font-size: 20px;
+}
+#text-notifications span {
+  font-size: 15px;
+  color: #71858E;
+}
 /* Panel search */
 .search {
   display: flex;
