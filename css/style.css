@@ -18,21 +18,17 @@ body {
   height: 83%;
   background-color: white;
 }
+/* Pannello di sinistra */
 .panel-left {
   width: 35%;
   height: 100%;
-  background-color: red;
-  border-right: 1px solid #EAEAEA;
-}
-.panel-right {
-  width: 65%;
-  height: 100%;
-  background-color: orange;
+  border-right: 1px solid grey;
 }
 .profile {
   display: flex;
   align-items: center;
   width: 100%;
+  height: 6%;
   background-color: #EAEAEA;
 }
 .user {
@@ -45,7 +41,7 @@ body {
   margin-top: 5px;
   margin-left: 5px;
 }
-.profile > span {
+.user > span {
   margin-left: 5px;
 }
 .icons {
@@ -57,4 +53,30 @@ body {
   font-size: 20px;
   margin-right: 25px;
   color: #B1B1B1;
+}
+/* Pannello di destra */
+.panel-right {
+  width: 65%;
+  height: 100%;
+  background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+}
+.chat {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 6%;
+  background-color: #EAEAEA;
+}
+.user-chat {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+#profile-avatar-chat {
+  width: 44px;
+  margin-left: 10px;
+  border-radius: 50px;
+}
+.user-chat > span {
+  margin-left: 15px;
 }
