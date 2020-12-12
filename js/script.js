@@ -93,6 +93,7 @@ var app = new Vue(
   methods: {
     showchat: function (index) {
       this.indexChat=index;
+      console.log(this);
     }
   }
  }

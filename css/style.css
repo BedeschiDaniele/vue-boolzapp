@@ -128,8 +128,15 @@ ul {
   display: flex;
   align-items: center;
 }
-.friend span {
-  margin-left: 15px;
+.friend #p-color{
+  white-space: nowrap;
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: lightgray;
+}
+.name-user {
+  margin-left: 20px;
 }
 /* /Pannello di sinistra */
 /* Pannello di destra */
@@ -182,6 +189,7 @@ ul {
   text-align: end;
   font-size: 10px;
   padding-left: 215px;
+  color: grey;
 }
 
 

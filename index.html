@@ -47,9 +47,10 @@
           <ul>
             <li v-for="(item,index) in contacts" @click="showchat(index)" >
               <img :src="item.avatar" :alt="item.name">
-              <span>{{item.name}}</span>
-
-
+              <div class="name-user">
+                <p>{{item.name}}</p>
+                <p id="p-color">{{item.messages[(item.messages.length) - 1].text}}</p>
+              </div>
             </li>
           </ul>
         </div>
