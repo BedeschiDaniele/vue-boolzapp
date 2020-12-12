@@ -128,16 +128,28 @@ ul {
   display: flex;
   align-items: center;
 }
-.friend #p-color{
+.name-user {
+  width: 100%;
+  margin-left: 20px;
+}
+#p-color{
   white-space: nowrap;
   width: 200px;
   overflow: hidden;
   text-overflow: ellipsis;
   color: lightgray;
 }
-.name-user {
-  margin-left: 20px;
+
+#set-date {
+ display: flex;
+ justify-content: space-between;
+ margin-right: 20px;
 }
+#format-text {
+  color: grey;
+  font-size: 10px;
+}
+
 /* /Pannello di sinistra */
 /* Pannello di destra */
 .panel-right {

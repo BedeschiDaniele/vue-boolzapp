@@ -48,7 +48,11 @@
             <li v-for="(item,index) in contacts" @click="showchat(index)" >
               <img :src="item.avatar" :alt="item.name">
               <div class="name-user">
-                <p>{{item.name}}</p>
+                <div id="set-date">
+                  <span>{{item.name}}</span>
+                  <span id="format-text">{{item.messages[(item.messages.length) - 1].date}}</span>
+                </div>
+
                 <p id="p-color">{{item.messages[(item.messages.length) - 1].text}}</p>
               </div>
             </li>
@@ -65,6 +69,13 @@
               <img id="profile-avatar-chat" src="https://cdn5.vectorstock.com/i/1000x1000/17/14/male-hacker-avatar-icon-image-vector-17311714.jpg" alt="profile-avatar">
               <span>Michele</span>
             </div>
+            <!-- <div class="user-chat" v-for="item in contacts[indexChat]">
+                <img :src="item.avatar" :alt="item.name" id="profile-avatar-chat">
+                <div class="name-user">
+                  <p>{{item.name}}</p>
+                </div>
+            </div> -->
+
             <div class="icons">
               <i class="fas fa-search"></i>
               <i class="fas fa-paperclip"></i>
@@ -79,7 +90,6 @@
                  <span>{{element.date}}</span>
               </div>
             </div>
-
         </div>
 
       <!-- Write message -->
