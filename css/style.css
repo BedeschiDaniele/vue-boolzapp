@@ -137,7 +137,7 @@ ul {
   width: 200px;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: lightgray;
+  color: gray;
 }
 
 #set-date {
@@ -146,8 +146,14 @@ ul {
  margin-right: 20px;
 }
 #format-text {
+  font-size: 20px;
+}
+#format-text-date {
   color: grey;
   font-size: 10px;
+}
+.active {
+  background: rgba(0, 0, 0, 0.1);
 }
 
 /* /Pannello di sinistra */

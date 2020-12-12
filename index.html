@@ -45,12 +45,12 @@
       <!-- Friend -->
         <div class="friend">
           <ul>
-            <li v-for="(item,index) in contacts" @click="showchat(index)" >
+            <li v-for="(item,index) in contacts" @click="showchat(index)" :class="(index == indexChat) ? 'active' : '' " >
               <img :src="item.avatar" :alt="item.name">
               <div class="name-user">
                 <div id="set-date">
-                  <span>{{item.name}}</span>
-                  <span id="format-text">{{item.messages[(item.messages.length) - 1].date}}</span>
+                  <span id="format-text">{{item.name}}</span>
+                  <span id="format-text-date">{{item.messages[(item.messages.length) - 1].date}}</span>
                 </div>
 
                 <p id="p-color">{{item.messages[(item.messages.length) - 1].text}}</p>
