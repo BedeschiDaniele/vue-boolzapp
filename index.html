@@ -45,7 +45,7 @@
       <!-- Friend -->
         <div class="friend">
           <ul>
-            <li v-for="(item,index) in contacts">
+            <li v-for="(item) in contacts">
               <img :src="item.avatar" :alt="item.name">
               <span>{{item.name}}</span>
             </li>
@@ -70,20 +70,13 @@
         </div>
         <!-- Chat send and received -->
         <div class="container-message">
-          <div :class=""class="message-send clerfix active">
-            <ul>
-              <li v-for="item in contacts[1].messages" v-if="item.status=='sent'">
-                {{item.text}}
-              </li>
-            </ul>
-          </div>
-          <div class="message-received clearfix">
-            <ul>
-              <li v-for="item in contacts[1].messages" v-if="item.status=='received'">
-                {{item.text}}
-              </li>
-            </ul>
-          </div>
+          <div v-for="element in contacts[indexChat].messages" :class=" (element.status=='sent') ? 'message-send':'message-received' ">
+              {{element.text}}
+              <div class="date">
+                 <span>{{element.date}}</span>
+              </div>
+            </div>
+
         </div>
 
       <!-- Write message -->

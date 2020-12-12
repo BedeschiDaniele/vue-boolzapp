@@ -87,7 +87,8 @@ var app = new Vue(
     			}
     		],
     	},
-    ]
+    ],
+    indexChat:0
   },
   methods: {
     filterMessage: function (array) {
