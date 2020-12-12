@@ -45,9 +45,11 @@
       <!-- Friend -->
         <div class="friend">
           <ul>
-            <li v-for="(item) in contacts">
+            <li v-for="(item,index) in contacts" @click="showchat(index)" >
               <img :src="item.avatar" :alt="item.name">
               <span>{{item.name}}</span>
+
+
             </li>
           </ul>
         </div>

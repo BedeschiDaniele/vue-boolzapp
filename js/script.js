@@ -91,12 +91,9 @@ var app = new Vue(
     indexChat:0
   },
   methods: {
-    filterMessage: function (array) {
-        const filteredArray = array.map((element, index) => {
-
-        return element.text;
-      });
-    },
+    showchat: function (index) {
+      indexChat=index;
+    }
   }
  }
 );
