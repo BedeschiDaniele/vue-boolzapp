@@ -90,12 +90,12 @@ var app = new Vue(
     ]
   },
   methods: {
-    // filterMessage: function () {
-    //     const filteredArray = contacts[0].messages.map((element, index) => {
-    //
-    //     return element.text;
-    //   });
-    // }
+    filterMessage: function (array) {
+        const filteredArray = array.map((element, index) => {
+
+        return element.text;
+      });
+    },
   }
  }
 );

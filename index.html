@@ -73,14 +73,14 @@
           <div :class=""class="message-send clerfix active">
             <ul>
               <li v-for="item in contacts[1].messages" v-if="item.status=='sent'">
-                {{item}}
+                {{item.text}}
               </li>
             </ul>
           </div>
           <div class="message-received clearfix">
             <ul>
               <li v-for="item in contacts[1].messages" v-if="item.status=='received'">
-                {{item}}
+                {{item.text}}
               </li>
             </ul>
           </div>
