@@ -88,12 +88,26 @@ var app = new Vue(
     		],
     	},
     ],
-    indexChat:0
+    indexChat:0,
+    message:""
   },
   methods: {
     showchat: function (index) {
       this.indexChat=index;
       console.log(this);
+    },
+    addmessage: function () {
+      var indexpass=this.indexChat;
+      var nav=this.contacts[indexpass].messages;
+      if (this.message != "") {
+        var newobject = {
+          date: dayjs().format('DD/MM/YYYY HH:mm:ss') ,
+          text: this.message,
+          status: 'sent'
+        }
+          nav.push(newobject);
+        }
+        this.message="";
     }
   }
  }
