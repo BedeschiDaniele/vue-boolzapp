@@ -91,14 +91,13 @@ var app = new Vue(
     indexChat:0,
     message:"",
     searchcon:"",
-    send:false,
-    filterarray:""
+    send:false
   },
   methods: {
     showchat: function (index) {
       this.indexChat=index;
-      console.log(this);
     },
+
     addmessage: function () {
       var indexpass=this.indexChat;
       var nav=this.contacts[indexpass].messages;
@@ -118,8 +117,9 @@ var app = new Vue(
        }, 1000
       );
     },
+
     searchcontact: function () {
-      this.filterarray =  this.contacts.filter((element) => {
+      this.contacts =  this.contacts.filter((element) => {
         console.log(element);
         return element.name.startsWith(this.searchcon);
       });
