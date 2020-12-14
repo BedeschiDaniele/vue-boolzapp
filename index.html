@@ -100,7 +100,7 @@
               <i class="far fa-grin-alt"></i>
             </div>
             <div class="set-message">
-              <input v-model="message" @keypress.13="addmessage" type="text" placeholder="Scrivi un messaggio">
+              <input v-model="message" @keypress.13="addmessage" @keypress.space="sendMessage" type="text" placeholder="Scrivi un messaggio">
             </div>
             <div class="microphone">
               <i class="fas fa-microphone"></i>

@@ -93,7 +93,13 @@ var app = new Vue(
     searchcon:"",
     send:false
   },
-
+  created: function () {
+     setTimeout(
+      () => {
+        this.sendMessage();
+    }, 1000
+   );
+  },
   methods: {
     showchat: function (index) {
       this.indexChat=index;
