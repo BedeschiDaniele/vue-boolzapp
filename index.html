@@ -46,7 +46,7 @@
       <!-- Friend -->
         <div class="friend">
           <ul>
-            <li v-for="(item,index) in contacts" @click="showchat(index)" :class="(index == indexChat) ? 'active' : '' " >
+            <li v-for="(item,index) in contacts" v-if="item.visible" @click="showchat(index)" :class="(index == indexChat) ? 'active' : '' "  >
               <img :src="item.avatar" :alt="item.name">
               <div class="name-user">
                 <div id="set-date">

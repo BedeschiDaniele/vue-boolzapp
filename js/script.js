@@ -94,10 +94,11 @@ var app = new Vue(
     send:false
   },
   methods: {
+    // Funzione che ci mostra tutte le chat 
     showchat: function (index) {
       this.indexChat=index;
     },
-
+    // Funzione che aggiunge nella chat il messaggio scritto nel campo input
     addmessage: function () {
       var indexpass=this.indexChat;
       var nav=this.contacts[indexpass].messages;
@@ -117,14 +118,16 @@ var app = new Vue(
        }, 1000
       );
     },
-
+    // Funzione che cerca il contatto
     searchcontact: function () {
-      this.contacts =  this.contacts.filter((element) => {
-        console.log(element);
-        return element.name.startsWith(this.searchcon);
+      this.contacts.forEach((item) => {
+        item.visible = false;
+        if (item.name.includes(this.searchcon)) {
+          item.visible=true;
+        }
       });
     },
-
+    // Funzione che ci invia la stringa "OK" dopo un secondo
     sendMessage: function() {
       var indexpass=this.indexChat;
       var nav=this.contacts[indexpass].messages;
