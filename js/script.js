@@ -89,8 +89,11 @@ var app = new Vue(
     	},
     ],
     indexChat:0,
-    message:""
+    message:"",
+    searchcon:"",
+    send:false
   },
+
   methods: {
     showchat: function (index) {
       this.indexChat=index;
@@ -108,6 +111,28 @@ var app = new Vue(
           nav.push(newobject);
         }
         this.message="";
+        this.send=true;
+    },
+    searchcontact: function () {
+      var filterarray =  this.contacts.filter((element) => {
+        console.log(element);
+        return element.name.startsWith(this.searchcon);
+      });
+    },
+
+    sendMessage: function() {
+      var indexpass=this.indexChat;
+      var nav=this.contacts[indexpass].messages;
+      console.log(this.send);
+      if (this.send == true) {
+        var newobject = {
+          date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
+          text: "Ok",
+          status: 'received'
+        }
+          nav.push(newobject);
+          console.log(nav);
+        }
     }
   }
  }
