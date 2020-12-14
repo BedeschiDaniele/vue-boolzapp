@@ -94,11 +94,12 @@ var app = new Vue(
     send:false
   },
   created: function () {
-     setTimeout(
-      () => {
-        this.sendMessage();
-    }, 1000
-   );
+      setTimeout(
+       () => {
+         this.sendMessage();
+     }, 5000
+    );
+
   },
   methods: {
     showchat: function (index) {
