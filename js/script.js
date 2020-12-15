@@ -91,10 +91,11 @@ var app = new Vue(
     indexChat:0,
     message:"",
     searchcon:"",
-    send:false
+    send:false,
+    access: dayjs().format('DD/MM/YYYY HH:mm:ss')
   },
   methods: {
-    // Funzione che ci mostra tutte le chat 
+    // Funzione che ci mostra tutte le chat
     showchat: function (index) {
       this.indexChat=index;
     },

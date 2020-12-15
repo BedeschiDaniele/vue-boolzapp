@@ -66,16 +66,18 @@
       <div class="panel-right">
       <!-- Chat up -->
         <div class="chat">
-            <div class="user-chat">
+            <!-- <div class="user-chat">
               <img id="profile-avatar-chat" src="https://cdn5.vectorstock.com/i/1000x1000/17/14/male-hacker-avatar-icon-image-vector-17311714.jpg" alt="profile-avatar">
-              <span>Michele</span>
-            </div>
-            <!-- <div class="user-chat" v-for="item in contacts[indexChat]">
+              <span>{{item.name}}</span>
+            </div> -->
+            <div class="user-chat" v-for="item in contacts[indexChat]">
+              {{item}}
                 <img :src="item.avatar" :alt="item.name" id="profile-avatar-chat">
                 <div class="name-user">
                   <p>{{item.name}}</p>
+                  <p>Ultimo accesso: {{access}} </p>
                 </div>
-            </div> -->
+            </div>
 
             <div class="icons">
               <i class="fas fa-search"></i>
