@@ -66,24 +66,18 @@
       <div class="panel-right">
       <!-- Chat up -->
         <div class="chat">
-            <!-- <div class="user-chat">
-              <img id="profile-avatar-chat" src="https://cdn5.vectorstock.com/i/1000x1000/17/14/male-hacker-avatar-icon-image-vector-17311714.jpg" alt="profile-avatar">
-              <span>{{item.name}}</span>
-            </div> -->
-            <div class="user-chat">
-
-                <img :src="contacts[indexChat].avatar" :alt="contacts[indexChat].name" id="profile-avatar-chat">
-                <div class="name-user">
-                  <p>{{contacts[indexChat].name}}</p>
-                  <p>Ultimo accesso: {{access}} </p>
-                </div>
+          <div class="user-chat">
+            <img :src="contacts[indexChat].avatar" :alt="contacts[indexChat].name" id="profile-avatar-chat">
+            <div class="name-user">
+              <p>{{contacts[indexChat].name}}</p>
+              <p>Ultimo accesso: {{access}} </p>
             </div>
-
-            <div class="icons">
-              <i class="fas fa-search"></i>
-              <i class="fas fa-paperclip"></i>
-              <i class="fas fa-ellipsis-v"></i>
-            </div>
+          </div>
+          <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-paperclip"></i>
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
         </div>
         <!-- Chat send and received -->
         <div class="container-message">
