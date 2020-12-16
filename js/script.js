@@ -123,7 +123,7 @@ var app = new Vue(
     searchcontact: function () {
       this.contacts.forEach((item) => {
         item.visible = false;
-        if (item.name.includes(this.searchcon)) {
+        if (item.name.toLowerCase().includes(this.searchcon.toLowerCase())) {
           item.visible=true;
         }
       });
